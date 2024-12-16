@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+<welcome-file-list>
+        <welcome-file>register.jsp</welcome-file>
+    </welcome-file-list>
+    
+   
+    <servlet>
+        <servlet-name>addCustomer</servlet-name>
+        <servlet-class>Servlet.addCustomer</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addCustomer</servlet-name>
+        <url-pattern>/addcustomer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+     	<servlet-name>login</servlet-name>
+     	<servlet-class>Servlet.login</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>login</servlet-name>
+     	<url-pattern>/lo</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>adminCustomers</servlet-name>
+     	<servlet-class>Servlet.adminCustomers</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>adminCustomers</servlet-name>
+     	<url-pattern>/cusadmin</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>singleDataButton</servlet-name>
+     	<servlet-class>Servlet.singleDataButton</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>singleDataButton</servlet-name>
+     	<url-pattern>/sdb</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>updateCustomer</servlet-name>
+     	<servlet-class>Servlet.updateCustomer</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>updateCustomer</servlet-name>
+     	<url-pattern>/uc</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>deleteCustomer</servlet-name>
+     	<servlet-class>Servlet.deleteCustomer</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>deleteCustomer</servlet-name>
+     	<url-pattern>/dc</url-pattern>
+     </servlet-mapping>
+    
+    
+
+</web-app>
+
